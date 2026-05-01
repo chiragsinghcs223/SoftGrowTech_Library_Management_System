@@ -1,52 +1,99 @@
-📒 Contact Management System
-A Java Swing desktop application to manage your contacts easily. Built as part of the SoftGrowTech internship program.
+Here's the complete README content in that exact format — copy and paste it:
 
-✨ Features
+---
 
-Add new contacts with Name and Phone number
-View all contacts in a clean, organized table
-Search contact by name instantly
-Delete a specific contact with one click
-Clear all contacts at once
-Filter contacts in real time as you type
-Beautiful dark themed UI
+# 📚 Library Management System
 
+A Java Swing desktop application to manage your library books easily. Built as part of the **SoftGrowTech** internship program.
 
-🚀 How to Run
-Requirements
+---
 
-Java JDK 8 or above installed
-Download from https://adoptium.net
+## ✨ Features
+
+- Add new books with Title, Author, Publish Year and ISBN
+- View all books in a clean, organized table
+- Search books by Title, Author or Publish Year
+- Delete a specific book by title
+- Clear all input fields at once
+- Filter and sort books by clicking column headers
+- Live statistics panel that updates after every action
+- Beautiful modern UI with color coded buttons and status bar
+
+---
+
+## 🚀 How to Run
+
+### Requirements
+
+- Java JDK 17 or above installed
+- Download from https://adoptium.net
 
 Verify your installation:
-bashjava -version
+```bash
+java -version
 javac -version
-Steps
+```
 
-Download or clone this repository
+### Steps
 
-git clone https://github.com/chiragsinghcs223/contact-management-system
-cd contact-management-system
+1. Download or clone this repository
 
-Compile the file:
+```bash
+git clone https://github.com/chiragsinghcs223/library-management-system
+cd library-management-system
+```
 
-javac ContactManager.java
+2. Compile all files:
 
-Run the application:
+```bash
+javac *.java
+```
 
-java ContactManager
+3. Run the application:
 
-🛠️ Tech Used
-TechnologyPurposeJavaCore programming languageJava SwingGUI framework for the desktop interface
+```bash
+java LibraryGUI
+```
 
-📁 Project Structure
-ContactManagementSystem/
-├── ContactManager.java     # Main application file — GUI + logic
-└── README.md               # Project documentation
+---
 
-👨‍💻 Author
-Chirag Singh
-GitHub: @chiragsinghcs223
+## 🛠️ Tech Used
 
-🏢 Internship
-This project was built during an internship at SoftGrowTech as part of a hands-on Java development program focused on building real-world desktop applications using Java Swing.
+| Technology | Purpose |
+|---|---|
+| Java | Core programming language |
+| Java Swing | GUI framework for the desktop interface |
+| Java OOP | Encapsulation, Abstraction, Inheritance, Polymorphism |
+| File I/O | Auto save and load books via BufferedReader/BufferedWriter |
+
+---
+
+## 📁 Project Structure
+
+```
+LibrarySystem/
+├── Book.java                   # Data model — private fields, getters, setters
+├── LibraryOperations.java      # Interface — abstract CRUD contract
+├── BookNotFoundException.java  # Custom checked exception
+├── Library.java                # Business logic — CRUD, file I/O, stats
+├── LibraryGUI.java             # Swing GUI — main application window
+├── library_data.txt            # Auto generated file to store book data
+└── README.md                   # Project documentation
+```
+
+---
+
+## 👨‍💻 Author
+
+**Chirag Singh**
+GitHub: [@chiragsinghcs223](https://github.com/chiragsinghcs223)
+
+---
+
+## 🏢 Internship
+
+This project was built during an internship at **SoftGrowTech** as part of a hands-on Java development program focused on building real-world desktop applications using Java Swing and core OOP concepts.
+
+---
+
+*Built with Java Swing · Core OOP · SoftGrowTech Internship Project*
